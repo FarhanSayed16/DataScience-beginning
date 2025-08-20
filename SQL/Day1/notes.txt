@@ -4,3 +4,14 @@ drop database `any name`
 use `any name`
 show `any name`
 create table `any name`
+
+eg :-
+create table college (
+id int primary key,
+name varchar(50),
+age int not null
+);
+
+
+drop --- mtlb dlt ---  table kaustubh;
+drop table kaustubh;
