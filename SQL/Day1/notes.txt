@@ -1,0 +1,6 @@
+This is the notes for sql
+Create Database `any name`
+drop database `any name`
+use `any name`
+show `any name`
+create table `any name`
