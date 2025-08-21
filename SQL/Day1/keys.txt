@@ -5,4 +5,6 @@ foreign key :- can be null, duplicatte, at foreign key is the primary key of dif
 3 types of constraints 
 1) not null - cannot be void
 2) unique - should be unique
-3) primary key - cannot nbe null and alwys unniqueq
+3) primary key - cannot nbe null and alwys unnique
+
+f
