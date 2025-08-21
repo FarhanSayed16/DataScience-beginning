@@ -1,0 +1,8 @@
+primary keys- not nul hamesha aur sabse unique
+
+foreign key :- can be null, duplicatte, at foreign key is the primary key of different table columns
+
+3 types of constraints 
+1) not null - cannot be void
+2) unique - should be unique
+3) primary key - cannot nbe null and alwys unniqueq
