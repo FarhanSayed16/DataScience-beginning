@@ -7,3 +7,6 @@ one alone column, --- `column name` + from `table name `
 
 
 distint keyword ---  helps to use when only one data is to be used, to avoid duplication 
+
+example for distint keyword
+select 

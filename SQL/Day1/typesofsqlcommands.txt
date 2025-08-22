@@ -30,3 +30,5 @@ drop database if exists shruti;3
 
 show databases;
 show tables;
+
+
