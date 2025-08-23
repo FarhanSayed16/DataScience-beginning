@@ -30,4 +30,34 @@ INSERT INTO student (name, age, gender, email, enrollment_date) VALUES
 select* from student;
 select* 
 from student
-where age > 20;
+where age > 20 and gender = 'Female';
+
+image = Day3/image.png
+where clause is used for all the operations like :- arithmetic operations, comparison operations, and logical operations.
+
+
+some type to operatros :
+1) and
+2) or
+3) not --- not is for not inside the condition, eg where not age > 20; 
+-- another long example : where not (age > 20 and gender = 'Female');
+
+some more types are like :-
+1) in --- eg where age in (20, 21, 22);
+2) between --- eg where age between 20 and 25;
+3) like --- eg where name like 'A%'; (A% means any name starting with A)
+4) not in --- eg where age not in (20, 21, 22);
+
+limit --- eg limit 5; - limits the whole table to 5 records
+
+order by --- eg order by age asc; (asc - ascending order, desc - descending order)  
+
+select *
+from student
+order by age asc;
+
+question - to show the age of the only top 5 students
+solution - select * from student order by age asc limit 5;
+
+
+    
