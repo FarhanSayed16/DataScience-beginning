@@ -1,10 +1,10 @@
-foreign key constraints
-- A foreign key constraint is a rule that maintains referential integrity between two tables.
-- It ensures that the value in a column (or a set of columns) in one table matches a value in a column (or a set of columns) in another table.
-- This relationship is established by defining a foreign key in the child table that references the primary key in the parent table.
-- Foreign key constraints help prevent actions that would destroy links between tables, such as deleting a row from a parent table that is referenced by a row in a child table.
+-- foreign key constraints
+-- - A foreign key constraint is a rule that maintains referential integrity between two tables.
+-- - It ensures that the value in a column (or a set of columns) in one table matches a value in a column (or a set of columns) in another table.
+-- - This relationship is established by defining a foreign key in the child table that references the primary key in the parent table.
+-- - Foreign key constraints help prevent actions that would destroy links between tables, such as deleting a row from a parent table that is referenced by a row in a child table.
 
-syntax for defining a foreign key constraint:
+-- syntax for defining a foreign key constraint:
 create table child_table (
     column1 data_type,
     column2 data_type,
