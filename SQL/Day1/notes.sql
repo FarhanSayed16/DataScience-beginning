@@ -1,11 +1,11 @@
-This is the notes for sql
-Create Database `any name`
-drop database `any name`
-use `any name`
-show `any name`
-create table `any name`
+-- This is the notes for sql
+-- Create Database `any name`
+-- drop database `any name`
+-- use `any name`
+-- show `any name`
+-- create table `any name`
 
-eg :-
+-- eg :-
 create table college (
 id int primary key,
 name varchar(50),
@@ -13,10 +13,10 @@ age int not null
 );
 
 
-drop --- mtlb dlt ---  table kaustubh;
-drop table kaustubh;
+-- drop --- mtlb dlt ---  table kaustubh;
+-- drop table kaustubh;
 
-datatypes :-
+-- datatypes :-
 INTEGER (or INT): Whole numbers
 SMALLINT: Smaller range of whole numbers
 BIGINT: Larger range of whole numbers
