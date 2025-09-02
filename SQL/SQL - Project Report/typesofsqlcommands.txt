@@ -1,0 +1,34 @@
+DDL (Data Definition Language):
+CREATE, ALTER, DROP, TRUNCATE
+(Defines and modifies database structure)
+
+DML (Data Manipulation Language):
+SELECT, INSERT, UPDATE, DELETE
+(Manages data within tables)
+
+DCL (Data Control Language):
+GRANT, REVOKE
+(Controls access to data)
+
+TCL (Transaction Control Language):
+COMMIT, ROLLBACK, SAVEPOINT
+(Manages transactions in the database)
+
+DQL (Data Query Language):
+SELECT
+(Retrieves data from the database)
+
+
+
+// exists do not exists
+create database college;
+create database if not exists college;
+use college;
+drop database if exists shruti;3
+
+/// showing 
+
+show databases;
+show tables;
+
+
