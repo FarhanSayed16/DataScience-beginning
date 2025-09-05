@@ -1,0 +1,22 @@
+What is a Lambda Function?
+--------------------------
+A lambda function in Python is a small, anonymous function defined using the `lambda` keyword. It can have any number of arguments but only one expression. Lambda functions are often used for short, simple operations where a full function definition is not needed.
+
+Syntax:
+-------
+lambda arguments: expression
+
+Example:
+--------
+# Adds 10 to the input value
+add_ten = lambda x: x + 10
+print(add_ten(5))  # Output: 15
+
+# Lambda function with two arguments
+multiply = lambda x, y: x * y
+print(multiply(3, 4))  # Output: 12
+
+# Using lambda with map()
+numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x**2, numbers))
+print(squared)  # Output: [1, 4, 9, 16]
