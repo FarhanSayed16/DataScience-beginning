@@ -1,0 +1,32 @@
+What is ImportWarning in Python?
+-------------------------------
+ImportWarning is a built-in warning category in Python. It is raised when there is a potential issue with an import statement, such as deprecated modules, ambiguous imports, or other import-related problems. By default, ImportWarning is ignored, but it can be enabled to help developers catch potential issues during development.
+
+How is ImportWarning Used?
+-------------------------
+- Python may issue an ImportWarning when it detects something unusual or potentially problematic with an import.
+- You can manually trigger an ImportWarning using the warnings module.
+- You can also configure Python to display ImportWarnings.
+
+Examples:
+---------
+
+# Example 1: Manually triggering an ImportWarning
+import warnings
+
+warnings.warn("This is an import warning example.", ImportWarning)
+
+# Example 2: Enabling ImportWarnings to be shown
+import warnings
+
+warnings.simplefilter('always', ImportWarning)
+warnings.warn("This import warning will always be shown.", ImportWarning)
+
+# Example 3: ImportWarning for deprecated modules (simulated)
+try:
+    import some_deprecated_module  # This may trigger an ImportWarning in real scenarios
+except ImportError:
+    print("Module not found.")
+
+# Note: By default, ImportWarnings are ignored. To see them, use the -Wd flag when running Python:
+# python -Wd
