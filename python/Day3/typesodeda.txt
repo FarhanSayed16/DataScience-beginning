@@ -1,0 +1,26 @@
+Types of EDA:
+
+1. Univariate Analysis
+    - Examines one variable at a time.
+    - Helps understand the distribution, central tendency, and spread.
+    - Example: Histograms, box plots, summary statistics.
+
+2. Bivariate Analysis
+    - Analyzes the relationship between two variables.
+    - Helps identify correlations or associations.
+    - Example: Scatter plots, correlation coefficients, cross-tabulations.
+
+3. Multivariate Analysis
+    - Involves analysis of more than two variables.
+    - Helps uncover complex relationships and interactions.
+    - Example: Pair plots, heatmaps, multivariate regression.
+
+4. Graphical Analysis
+    - Uses visualizations to summarize and explore data.
+    - Makes patterns, trends, and outliers easier to spot.
+    - Example: Bar charts, line plots, pie charts.
+
+5. Non-Graphical Analysis
+    - Uses summary statistics and numerical methods.
+    - Provides quantitative insights into data.
+    - Example: Mean, median, mode, standard deviation, skewness, kurtosis.
