@@ -1,0 +1,54 @@
+Common Pandas Functions and Their Explanation
+---------------------------------------------
+
+1. read_csv()
+   - Reads data from a CSV file into a DataFrame.
+   - Example:
+     import pandas as pd
+     df = pd.read_csv('data.csv')
+
+2. head()
+   - Returns the first n rows of a DataFrame (default is 5).
+   - Example:
+     df.head()
+
+3. info()
+   - Displays summary information about the DataFrame, including data types and non-null counts.
+   - Example:
+     df.info()
+
+4. describe()
+   - Generates descriptive statistics for numeric columns (mean, std, min, max, etc.).
+   - Example:
+     df.describe()
+
+5. dropna()
+   - Removes rows with missing values.
+   - Example:
+     df_clean = df.dropna()
+
+6. fillna()
+   - Fills missing values with a specified value.
+   - Example:
+     df_filled = df.fillna(0)
+
+7. groupby()
+   - Groups data by one or more columns and allows aggregation.
+   - Example:
+     df.groupby('column_name').mean()
+
+8. sort_values()
+   - Sorts the DataFrame by the values of one or more columns.
+   - Example:
+     df_sorted = df.sort_values('column_name')
+
+9. merge()
+   - Combines two DataFrames based on a common column (similar to SQL JOIN).
+   - Example:
+     pd.merge(df1, df2, on='id')
+
+10. value_counts()
+    - Returns the count of unique values in a
+
+
+    
