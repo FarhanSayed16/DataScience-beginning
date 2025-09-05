@@ -1,0 +1,18 @@
+What is KDE in Data Science?
+----------------------------
+KDE stands for Kernel Density Estimation. It is a non-parametric way to estimate the probability density function (PDF) of a continuous random variable. KDE is used to visualize the distribution of data, providing a smooth curve that represents the data's underlying distribution.
+
+Why is KDE Used?
+----------------
+- To understand the distribution and shape of data
+- To identify peaks, spread, and modality (number of modes)
+- As an alternative to histograms for visualizing distributions
+
+Example (using seaborn in Python):
+----------------------------------
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+data = [1, 2, 2, 3, 3, 3, 4, 4, 5]
+sns.kdeplot(data)
+plt.title("Kernel Density Estimation (KDE) Plot")
