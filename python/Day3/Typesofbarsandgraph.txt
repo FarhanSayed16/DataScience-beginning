@@ -1,0 +1,107 @@
+Types of Bars and Graphs Explained with Examples
+
+Types of Bars and Graphs
+
+Histogram
+Count Plot
+Bar Chart
+Line Graph
+Pie Chart
+Box Plot
+Scatter Plot
+
+Summary of EDA (Exploratory Data Analysis):
+
+Exploratory Data Analysis (EDA) is the process of analyzing datasets to summarize their main characteristics, often using visual methods. EDA helps to understand the data, detect patterns, spot anomalies, test hypotheses, and check assumptions. Common steps in EDA include:
+
+- Understanding the structure and types of data (numerical, categorical, etc.)
+- Checking for missing values and outliers
+- Summarizing data using descriptive statistics (mean, median, mode, etc.)
+- Visualizing data distributions and relationships using plots (histograms, box plots, scatter plots, etc.)
+- Identifying correlations and trends
+
+EDA is an essential first step in any data analysis or machine learning project, as it guides further data cleaning,
+
+1) Histogram
+- Shows the distribution of a numeric variable by dividing data into bins.
+Example (using matplotlib in Python):
+import matplotlib.pyplot as plt
+
+data = [1,2,2,3,3,3,4,4,5]
+plt.hist(data, bins=5)
+plt.title("Histogram Example")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.show()
+
+2) Count Plot
+- Displays the count of observations in each categorical bin using bars.
+Example (using seaborn):
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+data = ['A', 'B', 'A', 'C', 'B', 'A']
+sns.countplot(x=data)
+plt.title("Count Plot Example")
+plt.show()
+
+3) Bar Chart
+- Compares quantities of different categories.
+Example:
+import matplotlib.pyplot as plt
+
+categories = ['A', 'B', 'C']
+values = [10, 15, 7]
+plt.bar(categories, values)
+plt.title("Bar Chart Example")
+plt.show()
+
+4) Line Graph
+- Shows trends over time or ordered categories.
+Example:
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 15, 25]
+plt.plot(x, y)
+plt.title("Line Graph Example")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.show()
+
+5) Pie Chart
+- Displays proportions of a whole.
+Example:
+import matplotlib.pyplot as plt
+
+labels = ['A', 'B', 'C']
+sizes = [30, 45, 25]
+plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+plt.title("Pie Chart Example")
+plt.show()
+
+6) Box Plot
+- Shows the distribution, median, and outliers of a dataset.
+Example:
+import matplotlib.pyplot as plt
+
+data = [10, 20, 15, 25, 30, 35, 40]
+plt.boxplot(data)
+plt.title("Box Plot Example")
+plt.show()
+
+7) Scatter Plot
+- Shows the relationship between two numeric variables.
+Example:
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [5, 7, 6, 8, 7]
+plt.scatter(x, y)
+plt.title("Scatter Plot Example")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.show()
+
+
+
