@@ -1,0 +1,21 @@
+What are KPIs?
+--------------
+KPIs (Key Performance Indicators) are measurable values that demonstrate how effectively an organization, team, or individual is achieving key business objectives. Organizations use KPIs to evaluate their success at reaching targets.
+
+Why are KPIs Important?
+-----------------------
+- Help track progress toward goals
+- Identify areas for improvement
+- Support data-driven decision making
+- Align teams and individuals with organizational objectives
+
+Examples of KPIs:
+-----------------
+- Sales growth rate
+- Customer satisfaction score
+- Employee turnover rate
+- Website traffic
+- Net profit margin
+- Project completion rate
+
+KPIs should be specific, measurable, achievable, relevant, and time
