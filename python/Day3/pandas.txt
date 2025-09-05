@@ -1,0 +1,38 @@
+What is Pandas?
+---------------
+Pandas is an open-source Python library used for data manipulation and analysis. It provides powerful data structures like Series (1D) and DataFrame (2D) to handle and analyze structured data easily and efficiently.
+
+Why is Pandas Used?
+-------------------
+- To read and write data from various file formats (CSV, Excel, SQL, etc.)
+- To clean, filter, and preprocess data
+- To perform data aggregation and summarization
+- To handle missing data
+- To merge, join, and reshape datasets
+- To perform statistical analysis
+
+Basic Examples:
+---------------
+
+# Importing pandas
+import pandas as pd
+
+# Creating a DataFrame from a dictionary
+data = {'Name': ['Amit', 'Priya', 'Rahul'],
+        'Age': [20, 22, 21]}
+df = pd.DataFrame(data)
+print(df)
+
+# Reading data from a CSV file
+df = pd.read_csv('data.csv')
+
+# Selecting a column
+print(df['Name'])
+
+# Filtering rows
+print(df[df['Age'] > 20])
+
+# Handling missing values
+df.fillna(0, inplace=True)
+
+# Grouping and
