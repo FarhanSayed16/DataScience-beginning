@@ -1,0 +1,222 @@
+Data Science in Python – Comprehensive Learning & Practice Roadmap
+
+1. Core Foundations
+    - Computer science basics: algorithms (sorting, searching, complexity Big-O), data structures (list, dict, set, heap, tree, graph)
+    - Discrete math: sets, logic, combinatorics
+    - Linear algebra: vectors, matrices, norms, eigenvalues, SVD, PCA intuition
+    - Probability: random variables, distributions (Normal, Bernoulli, Binomial, Poisson, Exponential, Beta, Gamma), expectation, variance, covariance
+    - Statistics: sampling, estimation, confidence intervals, hypothesis testing (t-test, chi-square, ANOVA), p-values vs effect size, Bayesian vs frequentist view
+    - Calculus (light): derivatives, partial derivatives, gradients, chain rule
+    - Optimization: gradient descent variants, overfitting, regularization (L1/L2, early stopping), convex vs non-convex
+
+2. Python Language Proficiency
+    - Syntax mastery: control flow, functions, comprehensions, iterators, generators
+    - OOP (class, dunder methods, inheritance, dataclasses)
+    - Functional patterns: map/filter/reduce, lambda, immutability awareness
+    - Error handling & logging
+    - Modules & packaging (pyproject.toml, virtual environments)
+    - Type hints & static analysis (mypy, pyright, pydantic)
+    - Performance: profiling (cProfile), vectorization, multiprocessing vs multithreading (GIL), async basics
+    - Clean code: readability, refactoring, SOLID principles (pragmatic)
+
+3. Python Data Stack
+    - NumPy: ndarray, broadcasting, ufuncs, vectorization, memory layout, random module
+    - Pandas: Series, DataFrame, indexing, joins/merge, groupby, pivot/melt, time series handling, categorical data, apply vs vectorization, performance tuning
+    - Polars (optional for speed)
+    - Dask / Vaex for scaling tabular workflows
+    - Arrow & Parquet formats
+
+4. Data Acquisition & Storage
+    - Reading/writing: CSV, JSON, Parquet, Feather, HDF5
+    - Web APIs (requests, rate limiting, pagination)
+    - Web scraping basics (BeautifulSoup, Selenium)
+    - Databases: SQL (SELECT, JOINs, window functions, CTEs, indexing), PostgreSQL specifics
+    - NoSQL (MongoDB basics, Redis caching use cases)
+    - Data lakes vs warehouses (S3 + Athena, Snowflake, BigQuery concepts)
+
+5. Data Cleaning & Wrangling
+    - Missing data strategies (MCAR/MAR/MNAR)
+    - Outlier detection (IQR, z-score, robust methods)
+    - Data types, casting, normalization vs standardization
+    - Text cleanup, categorical encoding (one-hot, target, ordinal)
+    - Handling skew (log, Box-Cox, Yeo-Johnson)
+    - Imputation (mean/median, KNN, iterative)
+    - Leakage avoidance
+
+6. Exploratory Data Analysis (EDA)
+    - Univariate, bivariate, multivariate analysis
+    - Distribution diagnostics (QQ plots, KDE)
+    - Correlation (Pearson/Spearman, Cramér’s V for categorical)
+    - Feature-target relationship profiling
+    - Automated profiling tools (ydata-profiling, sweetviz) with skepticism
+
+7. Data Visualization & Communication
+    - Matplotlib/Seaborn core plots (hist, box, violin, joint, pair, heatmap)
+    - Plotly / Altair for interactive dashboards
+    - Storytelling: clarity, minimal ink, annotation
+    - Dashboarding (Streamlit, Dash)
+    - Effective reporting (Jupyter → exported artifacts)
+
+8. Machine Learning Fundamentals
+    - Bias-variance tradeoff
+    - Train/validation/test splits, cross-validation strategies (k-fold, stratified, time series splits)
+    - Metrics:
+      - Classification: accuracy, precision, recall, F1, ROC AUC, PR AUC, calibration
+      - Regression: MSE, RMSE, MAE, R2, MAPE, pinball loss
+      - Ranking/recs: NDCG, MAP
+      - Imbalanced handling: resampling, class weights, focal loss (advanced)
+    - Model families:
+      - Linear/Logistic regression (regularization, interpretability)
+      - Naive Bayes
+      - k-NN
+      - Tree-based: DecisionTree, RandomForest, Gradient Boosting (XGBoost, LightGBM, CatBoost)
+      - SVM (linear vs kernel)
+      - Ensemble strategies: bagging, boosting, stacking, blending
+    - Feature engineering: interactions, polynomial, target encoding, embeddings (for categorical high-cardinality)
+    - Pipelines (scikit-learn Pipeline, ColumnTransformer)
+    - Hyperparameter optimization: GridSearchCV, RandomizedSearchCV, Bayesian (Optuna)
+    - Explainability: feature importance (gain, permutation, SHAP), partial dependence plots
+
+9. Unsupervised & Advanced Topics
+    - Clustering: KMeans, DBSCAN, HDBSCAN, Gaussian Mixtures
+    - Dimensionality reduction: PCA, t-SNE, UMAP
+    - Anomaly detection: IsolationForest, OneClassSVM, robust covariance
+    - Recommender systems: collaborative filtering (user/item-based), matrix factorization, implicit feedback
+    - Association rules (Apriori, FP-Growth)
+
+10. Time Series
+    - Stationarity, decomposition (trend, seasonality)
+    - Classical models: ARIMA / SARIMA / SARIMAX
+    - Feature creation: lags, rolling stats, holiday features
+    - Forecast frameworks: Prophet, statsmodels
+    - Multivariate forecasting and global models (LightGBM, TFT overview)
+
+11. Natural Language Processing (intro to intermediate)
+    - Text preprocessing: tokenization, stemming, lemmatization
+    - Vectorization: Bag-of-Words, TF-IDF, hashing trick
+    - Classic models: logistic regression / SVM for text classification
+    - Word embeddings: word2vec / GloVe (conceptually)
+    - Modern: transformer basics, pretrained models (HuggingFace pipelines)
+    - Use cases: sentiment analysis, topic modeling (LDA), NER basics
+
+12. Deep Learning (foundational)
+    - Neural network basics: layers, activation, loss, backprop
+    - Framework: PyTorch (tensors, autograd, nn.Module, DataLoader)
+    - CNN/RNN conceptual overview
+    - When NOT to use deep learning (data/complexity tradeoffs)
+
+13. Data Engineering Essentials
+    - File formats & compression (Parquet + Snappy vs CSV)
+    - Batch vs streaming (Kafka conceptual)
+    - Workflow orchestration: Airflow, Prefect basics
+    - Data quality checks (Great Expectations)
+    - Incremental / idempotent pipelines
+
+14. MLOps & Productionization
+    - Model packaging: virtualenv, Docker basics
+    - Model serving: FastAPI, Flask, batch scoring vs REST vs streaming
+    - Reproducibility: random seeds, environment lock (requirements.txt, poetry.lock)
+    - Experiment tracking: MLflow, Weights & Biases
+    - Model registry & versioning
+    - Monitoring: data drift, concept drift, performance decay
+    - CI/CD basics (GitHub Actions)
+    - Security & governance (PII handling, access control)
+
+15. Big Data & Scaling
+    - Spark (PySpark DataFrame API, lazy evaluation, partitions, joins, wide vs narrow transformations)
+    - Distributed ML (Spark MLlib, incremental learning strategies)
+    - Cloud services: AWS (S3, Lambda, ECS, SageMaker basics), GCP (BigQuery), Azure (ML Studio)
+    - Cost optimization awareness
+
+16. Data Ethics & Compliance
+    - Bias detection, fairness metrics
+    - Privacy: anonymization, differential privacy (concept)
+    - Responsible AI documentation (model cards)
+
+17. Performance & Optimization
+    - Memory profiling (tracemalloc)
+    - Cython / Numba / vectorization
+    - Caching (functools.lru_cache, Redis)
+    - Efficient I/O (chunking, streaming)
+
+18. Testing & Quality
+    - Unit tests (pytest), fixtures, parametrization
+    - Data tests (schema, nulls, ranges)
+    - Model tests (performance guardrails, reproducibility checks)
+    - Code quality: linting (ruff, black, isort), pre-commit hooks
+
+19. Version Control & Collaboration
+    - Git workflows (feature branch, PR, rebase vs merge)
+    - Git LFS for large artifacts
+    - Documentation: README, docstrings (Google / NumPy style), ADRs (architecture decision records)
+
+20. Soft Skills & Professional
+    - Problem framing & requirement clarification
+    - Translating business goals to measurable metrics
+    - Stakeholder communication (concise insights, tradeoff articulation)
+    - Storytelling with visuals and narrative
+    - Prioritization & estimation
+
+21. Portfolio & Practice Strategy
+    - Core projects:
+      - Exploratory analysis of real dataset (Kaggle or public gov data)
+      - Supervised classification with full pipeline + explainability
+      - Time series forecasting project
+      - NLP text classification or topic modeling
+      - Recommender mini-system
+      - End-to-end deployed model (API + simple dashboard)
+    - Stretch goals:
+      - Incremental retraining pipeline with monitoring
+      - Data quality validation suite
+      - Lightweight MLOps (tracking + registry + drift alert)
+    - Contribute to open-source (small bugfix or doc improvement in a data library)
+
+22. Daily Practice Routine (example)
+    - 30 min: algorithm/data structure drills (focus on problem decomposition)
+    - 45 min: focused topic (stats, ML concept)
+    - 45 min: project implementation or refactor
+    - 15 min: reading papers/blogs (distill learnings)
+    - Weekly: write summary of what was learned (teaching solidifies)
+
+23. Recommended Tools & Libraries
+    - Core: numpy, pandas, scikit-learn, scipy, statsmodels
+    - Viz: matplotlib, seaborn, plotly
+    - ML: xgboost, lightgbm, catboost
+    - DL: torch, transformers
+    - Workflow: mlflow, prefect / airflow
+    - Quality: great_expectations, pydantic
+    - Deployment: fastapi, uvicorn, docker
+    - Optimization: numba, polars
+    - Experimentation: optuna
+
+24. Common Pitfalls to Avoid
+    - Data leakage (peeking at test data, scaling after split)
+    - Improper cross-validation with time series
+    - Chasing accuracy without business alignment
+    - Ignoring class imbalance
+    - Over-engineering before validating baseline
+    - Not tracking experiments
+    - Lack of reproducible environment
+
+25. How to Progress
+    - Phase 1: Python + stats + pandas fundamentals
+    - Phase 2: ML supervised + pipelines + metrics
+    - Phase 3: Unsupervised + feature engineering + model tuning
+    - Phase 4: Time series / NLP specialization
+    - Phase 5: MLOps + deployment + monitoring
+    - Phase 6: Scaling & cloud + portfolio polish
+
+Mindset
+    - Start simple (baseline), iterate with measurement
+    - Automate repetitive analysis
+    - Treat data tasks as software (tests, versioning, refactors)
+    - Communicate early, often, clearly
+
+Outcome
+    - Ability to take raw data → cleaned dataset → model → deployed solution → monitored system with documented decisions.
+
+Suggested First Action
+    - Set up environment (conda or venv), create a reproducible template repo (src/, notebooks/, tests/, data/, requirements.txt, README).
+    - Pick one public dataset and produce a polished exploratory + modeling report.
+
+End of roadmap.
