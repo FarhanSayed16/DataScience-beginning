@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Random BG Color</title>
+<!-- Use jQuery CDN for reliability -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    (function($){
+
+      $.fn.randomBg = function(){
+
+        setInterval(() => {
+
+          // Generate a random 6-digit hex color with padding
+
+          let color = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+
+          $(this).css('background-color', color);
+
+        }, 3000);
+
+      };
+
+    })(jQuery);
+ 
+    $(function(){
+
+      $('body').randomBg();
+
+    });
+</script>
+</head>
+<body>
+
+  Roll no:-23302A0047<br/>
+
+  Name:-Farhan Sayed<br/>
+
+  This plugin changes the background color randomly every 3 seconds.
+</body>
+</html>
+
+ 
